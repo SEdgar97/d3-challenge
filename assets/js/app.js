@@ -1,4 +1,3 @@
-//set svg and chart dimensions
 //set svg dimensions
 var svgWidth = 960;
 var svgHeight = 620;
@@ -182,7 +181,6 @@ var textNew = chartNew.selectAll(".stateText")
     .attr("dy", 3)
     .attr("font-size", "10px")
     .text(function (d) { return d.abbr });
-
 //create group for 3 x-axis labels
 var xLabelsNew = chartNew.append("g")
     .attr("transform", `translate(${width / 2}, ${height + 20 + margin.top})`);
